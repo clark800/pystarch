@@ -3,7 +3,7 @@ var DIRTY = false;
 var WAITING = false;
 
 function update() {
-    DIRTY = false; 
+    DIRTY = false;
     WAITING = true;
     var code = $('#input').val();
     $.post('/process', {source: code}).done(function(response) {

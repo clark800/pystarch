@@ -27,7 +27,7 @@ def format_output(output):
         result = ''
         max_line = max(mapping.keys())
         for i in range(1, max_line + 1):
-            result += mapping.get(i, '') + '\n'
+            result += mapping.get(i, '') + '\r\n'
         return result
 
 
